@@ -1,0 +1,20 @@
+name: Continuous Deployment
+
+on:
+  push:
+    tags:
+      - v1.*
+      - v2.*
+
+jobs:
+
+  build-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Publish to Registry
+        uses: AhnSeongHyun/action-tag-docke r-build-push@master
+        with:
+          repo_name: ash84/meier
+          username: komoliddin487@gmail.com
+          password: Gx7!dYp@92#fLm$Q
