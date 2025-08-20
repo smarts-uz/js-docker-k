@@ -22,4 +22,3 @@ jobs:
         env:
           REGISTRY_USERNAME: komoliddin
           REGISTRY_TOKEN: Gx7!dYp@92#fLm$Q
-          DOCKER_ORGANIZATION: myDockerOrganization
