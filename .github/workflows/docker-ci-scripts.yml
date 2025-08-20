@@ -1,0 +1,25 @@
+name: Docker Build and Publish
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # manual trigger
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build and Push Docker Image
+        uses: philips-software/docker-ci-scripts@v4.5.0
+        with:
+          dockerfile: "Dockerfile"
+          image-name: "node"
+          tags: "latest 12 12.1 12.1.4"
+        env:
+          REGISTRY_USERNAME: komoliddin
+          REGISTRY_TOKEN: Gx7!dYp@92#fLm$Q
+          DOCKER_ORGANIZATION: myDockerOrganization
