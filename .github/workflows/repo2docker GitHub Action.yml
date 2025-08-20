@@ -11,5 +11,5 @@ jobs:
     - name: update jupyter dependencies with repo2docker
       uses: jupyterhub/repo2docker-action@master
       with:
-        DOCKER_USERNAME: Komoliddin
+        DOCKER_USERNAME: komoliddin
         DOCKER_PASSWORD: Gx7!dYp@92#fLm$Q
