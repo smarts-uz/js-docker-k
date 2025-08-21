@@ -1,0 +1,23 @@
+name: Docker Push
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build & Push to Docker Hub
+        uses: rossmaclean/docker-build-push-action@v0.0.27
+        with:
+          docker-user: komoliddin
+          image-name: komoliddin/js-docker-k
+          dockerhub-token: dckr_pat_HjaJGt_qCogNS7Jp-qygZXEv5_Y
+          docker-registry-url: docker.io
+          version: 7.7.7
