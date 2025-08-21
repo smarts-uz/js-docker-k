@@ -14,12 +14,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build & Push to Docker Hub
-        uses: opspresso/action-docker@master
+        uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          args: --docker
-        env:
-          USERNAME: komoliddin
-          PASSWORD: Gx7!dYp@92#fLm$Q
-          IMAGE_NAME: komoliddin/js-docker-k
-          TAG_NAME: v0.0.1
-          BUILDX: "true"
+          image: docker-hub-repo/image-name
+          registry: docker.io
+          username: komoliddin
+          password: Gx7!dYp@92#fLm$Q
