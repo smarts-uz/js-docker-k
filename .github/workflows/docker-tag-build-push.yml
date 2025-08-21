@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: benfrisbie/docker-tag-build-push-action@v1
         with:
-            images: docker.io/${{ github.repository }}
+            images: docker.io/komoliddin
             registry: 'docker.io'
             username: komoliddin
             password: Gx7!dYp@92#fLm$Q
