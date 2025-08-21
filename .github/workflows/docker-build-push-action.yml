@@ -16,7 +16,7 @@ jobs:
       - name: Build & Push to Docker Hub
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: docker-hub-repo/image-name
+          image: komoliddin/js-docker-k
           registry: docker.io
           username: komoliddin
           password: Gx7!dYp@92#fLm$Q
