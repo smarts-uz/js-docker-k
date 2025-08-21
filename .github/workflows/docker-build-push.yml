@@ -20,4 +20,4 @@ jobs:
           image-name: komoliddin/js-docker-k
           dockerhub-token: ${{ secrets.DOCKERHUB_TOKEN }}
           docker-registry-url: docker.io
-          version: 7.7.7
+          version: 7.7.0
