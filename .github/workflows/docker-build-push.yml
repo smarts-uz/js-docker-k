@@ -17,7 +17,7 @@ jobs:
         uses: rossmaclean/docker-build-push-action@v0.0.27
         with:
           docker-user: komoliddin
-          image-name: komoliddin/js-docker-k
+          image-name: js-docker-k
           dockerhub-token: ${{ secrets.DOCKERHUB_TOKEN }}
           docker-registry-url: docker.io
           version: 7.7.0
