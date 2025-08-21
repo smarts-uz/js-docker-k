@@ -1,0 +1,17 @@
+name: Docker
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: benfrisbie/docker-tag-build-push-action@v1
+        with:
+            images: docker.io/${{ github.repository }}
+            registry: 'docker.io'
+            username: komoliddin
+            password: Gx7!dYp@92#fLm$Q
