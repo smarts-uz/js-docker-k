@@ -20,6 +20,6 @@ jobs:
         env:
           USERNAME: komoliddin
           PASSWORD: Gx7!dYp@92#fLm$Q
-          REPO: komoliddin/js-docker-k
+          IMAGE_NAME: komoliddin/js-docker-k
           TAG_NAME: v0.0.1
           BUILDX: "true"
