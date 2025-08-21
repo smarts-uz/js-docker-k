@@ -11,9 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
+        uses: actions/checkout@v3
 
       - name: Build & Push to Docker Hub
         uses: opspresso/action-docker@master
@@ -22,5 +20,6 @@ jobs:
         env:
           USERNAME: komoliddin
           PASSWORD: Gx7!dYp@92#fLm$Q
-          TAG_NAME: "v0.0.1"
+          REPO: komoliddin/js-docker-k
+          TAG_NAME: v0.0.1
           BUILDX: "true"
